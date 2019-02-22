@@ -2,12 +2,16 @@
     ViewData["Title"] = "Home Page";
 }
 
-<h2>Welcome to Project IA!</h2>
+<style>
+    h2.Welcome {
+        text-align: center;
+    }
+</style>
+<h2 class="Welcome">Welcome to IA!</h2>
 
 <pre>
-    Project IA is a product currently in alpha testing that connects [Consumers], 
-    anyone who is looking for content to publish,  directly to the people that
-    produce it, [Producers].
+IA, a product of Chibur currently in alpha testing, connects [Consumers], anyone who is looking for 
+content to publish,  directly to the people that produce it, [Producers].
 </pre>
 <pre>
     Consumers:
@@ -15,7 +19,6 @@
     2. Browse content available, and request specific content.
     3. Bid, purchase, publish!
 </pre>
-
 <pre>
     Producers:
     1. Register for access.
@@ -23,15 +26,26 @@
     3. Get paid!
 </pre>
 
+<style>
+    .signup {
+        border: 4px solid black;
+    }
+</style>
+
 <table style="width:100%">
     <tr>
-        <th>
-            <input type="button"
-                   value="Create Contributor Account">
-        </th>
-        <th>
-            <input type="button"
-                   value="Create Producer Account">
-        </th>
+        <td>
+            <form>
+                <button id="Signup" class="signup" formaction="/Home/Signup">
+                I am a Producer </button>
+            </form>
+        </td>
+
+        <td>
+            <form>
+                <button id="Signup" class="signup" formaction="/Home/Signup">
+                I am a Consumer </button>
+            </form>
+        </td>
     </tr>
 </table>
